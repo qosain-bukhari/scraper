@@ -1,0 +1,12 @@
+{
+  "name": "puppeteer-scraper",
+  "version": "1.0.0",
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0",
+    "puppeteer": "^21.5.0",
+    "puppeteer-core": "^10.1.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
