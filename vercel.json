@@ -1,5 +1,4 @@
 {
-  "version": 2,
   "functions": {
     "api/scrape.js": {
       "memory": 1024,
@@ -8,8 +7,14 @@
   },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.js"
+      "src": "/api/scrape",
+      "methods": ["POST", "OPTIONS"],
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type"
+      },
+      "dest": "/api/scrape.js"
     }
   ]
 }
